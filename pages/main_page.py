@@ -26,6 +26,7 @@ class MainPage(BasePage):
 
     def logout(self):
         self.open_menu()
+        WebDriverWait(self.driver, 30).until(lambda driver: self.is_element_displayed(*MainPageLocators.SETTINGS))
         self.click(self.element(*MainPageLocators.SETTINGS))
         WebDriverWait(self.driver, 30).until(lambda driver: 
             self.scroll_to_element(locator=SettingsPageLocators.LOG_OUT, direction="DOWN"))

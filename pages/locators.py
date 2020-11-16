@@ -10,6 +10,12 @@ class LoginPageLocators(object):
    DIALOG_WINDOW = (By.ID, "com.trello:id/parentPanel")
    OK_MODAL_BUTTON = (By.ID, "android:id/button1")
 
+class LoginPageAttlassianLocators(object):
+   CONTINUE_BUTTON = (By.ID, "continue")
+   LOGIN_BUTTON = (By.ID, "login-submit")
+   PASSWORD_INPUT = (By.ID, "password")
+   ADD_ANOTHER_BUTTON = (By.ID, "navigate-to-login-prompt")
+
 class MainPageLocators(object):
    TOOLBAR = (By.ID, "com.trello:id/toolbar")
    HAMBURGER_BUTTON = (By.CLASS_NAME, "android.widget.ImageButton")
